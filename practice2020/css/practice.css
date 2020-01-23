@@ -1,0 +1,19 @@
+﻿body {
+    background-color:cyan;
+}
+
+header {
+    width:960px;
+    
+    margin:0 auto;
+}
+
+    header h1 {
+        color: red;
+        align-content: center;
+    }
+
+    header h2 {
+        color: green;
+        align-content: center;
+    }
