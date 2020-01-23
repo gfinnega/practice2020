@@ -17,3 +17,7 @@ header {
         color: green;
         align-content: center;
     }
+
+div {
+    border-bottom: double;
+}
