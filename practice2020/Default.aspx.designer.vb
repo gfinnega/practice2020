@@ -50,6 +50,15 @@ Partial Public Class _Default
     Protected WithEvents txtName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''nameValidate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents nameValidate As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
     '''txtZip control.
     '''</summary>
     '''<remarks>
@@ -59,6 +68,15 @@ Partial Public Class _Default
     Protected WithEvents txtZip As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''zipValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents zipValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''txtPhone control.
     '''</summary>
     '''<remarks>
@@ -66,6 +84,15 @@ Partial Public Class _Default
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPhone As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''phoneValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents phoneValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''txtEmail control.
@@ -95,6 +122,15 @@ Partial Public Class _Default
     Protected WithEvents txtQuantity As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''manyRangeValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents manyRangeValidator As Global.System.Web.UI.WebControls.RangeValidator
+
+    '''<summary>
     '''btnCalculate control.
     '''</summary>
     '''<remarks>
@@ -111,6 +147,15 @@ Partial Public Class _Default
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnClear As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''ValidationSummary1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ValidationSummary1 As Global.System.Web.UI.WebControls.ValidationSummary
 
     '''<summary>
     '''lstSummary control.

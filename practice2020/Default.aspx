@@ -51,18 +51,21 @@
                 <td class="auto-style3">Name:</td>
                 <td class="auto-style2">
                     <asp:TextBox ID="txtName" runat="server" Width="322px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="nameValidate" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter a name." ForeColor="Red">*Please enter a name.</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style4">Zip:</td>
                 <td>
                     <asp:TextBox ID="txtZip" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="zipValidator" runat="server" ControlToValidate="txtZip" ErrorMessage="*Please enter a zip!!" ForeColor="Red" ValidationExpression="\d{5}(-\d{4})?"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style4">Phone:</td>
                 <td>
                     <asp:TextBox ID="txtPhone" runat="server" Width="164px"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="phoneValidator" runat="server" ControlToValidate="txtPhone" ErrorMessage="*Enter a proper phone number!!" ForeColor="Red" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}">*Enter a proper phone number</asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -74,7 +77,7 @@
             <tr>
                 <td class="auto-style4">Item:</td>
                 <td>
-                    <asp:DropDownList ID="ddlItem" runat="server">
+                    <asp:DropDownList ID="ddlItem" runat="server" AutoPostBack="True">
                         <asp:ListItem Value="$10">Basketball</asp:ListItem>
                         <asp:ListItem Value="$8">Soccer Ball</asp:ListItem>
                         <asp:ListItem Value="$1">Golf Ball</asp:ListItem>
@@ -86,6 +89,7 @@
                 <td class="auto-style4">How many?</td>
                 <td>
                     <asp:TextBox ID="txtQuantity" runat="server" Width="108px"></asp:TextBox>
+                    <asp:RangeValidator ID="manyRangeValidator" runat="server" ControlToValidate="txtQuantity" ErrorMessage="Out of range!" ForeColor="Red" MaximumValue="10" MinimumValue="1" Type="Integer">Out of range!</asp:RangeValidator>
                 </td>
             </tr>
             <tr>
@@ -96,12 +100,14 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td>
                     <asp:Button ID="btnCalculate" runat="server" Text="Calculate" Width="115px" />
-&nbsp;<asp:Button ID="btnClear" runat="server" Text="Clear" Width="115px" />
+&nbsp;<asp:Button ID="btnClear" runat="server" Text="Clear" Width="115px" CausesValidation="False" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" BackColor="#CCCCCC" BorderColor="Red" ForeColor="Red" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
