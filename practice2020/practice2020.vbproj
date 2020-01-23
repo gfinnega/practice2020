@@ -94,7 +94,7 @@
   <ItemGroup>
     <Content Include="Contactus.aspx" />
     <Content Include="css\practice.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,11 +105,11 @@
       <DependentUpon>Contactus.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.vb">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.vb">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
