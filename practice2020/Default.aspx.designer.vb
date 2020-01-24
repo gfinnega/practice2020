@@ -104,6 +104,15 @@ Partial Public Class _Default
     Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''emailValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents emailValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
     '''ddlItem control.
     '''</summary>
     '''<remarks>
